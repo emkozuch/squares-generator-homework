@@ -28,7 +28,9 @@
                     <h2 class="section-header">Select size</h2>
                     <hr class="separator">
                 </div>
-                <div class="size-btn-container">
+
+                <div id="parent-size" class="size-btn-container">
+
                     <div class="column small">
                         <input type="radio" name="size" data-size="small" id="radio-small"  class="radio-select">
                         <label for="radio-small" data-size="small" class="btn size-small"><i class=" fas fa-check option"></i>Small</label>
@@ -41,73 +43,73 @@
                         <input type="radio" name="size" data-size="large" id="radio-large"  class="radio-select">
                         <label for="radio-large" data-size="large" class="btn size-large"><i class=" fas fa-check option"></i>Large</label>
                     </div>
-
+                    
+            
                 </div>
+
             </div>
-            <div class="select-color-container">
+            <div id="parent-color"  class="select-color-container">
                 <div class="header-container">
                     <h2 class="section-header">Select color</h2>
                     <hr class="separator">
                 </div>
                 <div class="top-row">
 
-                    <input type="radio" name="color"  data-color="#2d3436" id="radio-color-one" class="radio-select">
+                    <input type="radio" name="color" data-color="#2d3436" id="radio-color-one" class="radio-select">
                     <label for="radio-color-one" data-color="#2d3436" class="btn color-space one">
                         <i class=" fas fa-check option"></i>
                     </label>
 
                     <input type="radio" name="color" data-color="#55E6C1" id="radio-color-two" class="radio-select">
-                    <label for="radio-color-two"  class="btn color-space two">
+                    <label for="radio-color-two" class="btn color-space two">
                         <i class=" fas fa-check option"></i>
                     </label>
 
-                    <input type="radio" name="color" id="radio-color-three" class="radio-select">
+                    <input type="radio" name="color" data-color="#a29bfe" id="radio-color-three" class="radio-select">
                     <label for="radio-color-three" data-color="#a29bfe" class="btn color-space three">
                         <i class=" fas fa-check option"></i>
                     </label>
 
                 </div>
                 <div class="bottom-row">
-                   
-                    <input type="radio" name="color" id="radio-color-four"  class="radio-select">
+
+                    <input type="radio" name="color" data-color="#d63031" id="radio-color-four" class="radio-select">
                     <label for="radio-color-four" data-color="#d63031" class="btn color-space four">
                         <i class=" fas fa-check option"></i>
                     </label>
 
-                    <input type="radio" name="color" id="radio-color-five" data-color="#ffeaa7" class="radio-select">
+                    <input type="radio" name="color" data-color="#ffeaa7" id="radio-color-five" data-color="#ffeaa7" class="radio-select">
                     <label for="radio-color-five" data-color="#ffeaa7" class="btn color-space five">
                         <i class=" fas fa-check option"></i>
                     </label>
 
-                    <input type="radio" name="color" id="radio-color-six"  class="radio-select">
+                    <input type="radio" name="color" data-color="#728391" id="radio-color-six" class="radio-select">
                     <label for="radio-color-six" data-color="#728391" class="btn color-space six">
                         <i class=" fas fa-check option"></i>
                     </label>
                 </div>
             </div>
-            <div class="select-position-container">
+            <div  class="select-position-container">
                 <div class="header-container">
                     <h2 class="section-header">Select position</h2>
                     <hr class="separator">
                 </div>
-                <div class="position-btns">
-                  
-                    <input type="radio" name="position" id="position-start"  class="radio-select">
+                <div id="parent-position"  class="position-btns">
+                    <input type="radio" name="position" data-position="start" id="position-start" class="radio-select">
                     <label for="position-start" data-position="start" class="btn position-start">
                         <i class=" fas fa-check option"></i>START
                     </label>
 
-                    <input type="radio" name="position" id="position-end"  class="radio-select">
+                    <input type="radio" name="position" data-position="end" id="position-end" class="radio-select">
                     <label for="position-end" data-position="end" class="btn position-end">
                         <i class=" fas fa-check option"></i>END
                     </label>
-
                 </div>
                 <div class="option-container">
                     <div class="message">
                         <p>or choose after which to put it</p>
                     </div>
-                    <div class="rec-queue"></div>
+                    <div id="parent-queue" class="rec-queue"></div>
                 </div>
             </div>
             <div class="confirm-container">
@@ -117,7 +119,9 @@
         </div>
     </div>
     <div class="main-container">
-        <div class="rectangles-container"></div>
+        <div class="rectangles-container">
+            <div class="rec-render"></div>
+        </div>
         <div class="confirm-btn-container">
             <button class="btn open-modal"><i class="fas fa-plus"></i></button>
         </div>
